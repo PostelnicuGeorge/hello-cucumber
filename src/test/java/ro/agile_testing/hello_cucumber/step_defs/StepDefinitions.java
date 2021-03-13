@@ -5,7 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import ro.agile_testing.hello_cucumber.services.IsItFriday;
 
-import static org.junit.Assert.*;
+import static org.testng.Assert.assertEquals;
 
 public class StepDefinitions {
 	private String today;
