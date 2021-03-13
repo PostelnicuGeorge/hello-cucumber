@@ -1,6 +1,6 @@
-package hello_cucumber.step_defs;
+package ro.agile_testing.hello_cucumber.step_defs;
 
-import hello_cucumber.services.IsItFriday;
+import ro.agile_testing.hello_cucumber.services.IsItFriday;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

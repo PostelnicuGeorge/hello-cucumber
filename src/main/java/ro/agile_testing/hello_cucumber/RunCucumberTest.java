@@ -1,4 +1,4 @@
-package hello_cucumber;
+package ro.agile_testing.hello_cucumber;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
