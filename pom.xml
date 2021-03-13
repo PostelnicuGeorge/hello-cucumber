@@ -7,11 +7,11 @@
 	<groupId>ro.agile-testing</groupId>
 	<artifactId>hello-cucumber</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
 
 	<properties>
 		<cucumber.version>6.8.1</cucumber.version>
 		<testng.version>7.4.0</testng.version>
+		<cucumber.reporting>5.5.2</cucumber.reporting>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -37,7 +37,7 @@
 		<dependency>
 			<groupId>net.masterthought</groupId>
 			<artifactId>cucumber-reporting</artifactId>
-			<version>5.5.2</version>
+			<version>${cucumber.reporting}</version>
 		</dependency>
 	</dependencies>
 
@@ -67,6 +67,15 @@
 						</manifest>
 					</archive>
 				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id> <!-- this is used for inheritance merges -->
+						<phase>package</phase> <!-- bind to the packaging phase -->
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

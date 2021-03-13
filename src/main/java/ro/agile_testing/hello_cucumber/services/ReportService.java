@@ -15,8 +15,8 @@ public class ReportService {
 	public void generateReport() {
 		File reportOutputDirectory = new File("target");
 		List<String> jsonFiles = new ArrayList<>();
-		jsonFiles.add("cucumber-report-1.json");
-		jsonFiles.add("cucumber-report-2.json");
+		jsonFiles.add("jsonReports/cucumber-report.json");
+//		jsonFiles.add("cucumber-report-2.json");
 
 		String buildNumber = "1";
 		String projectName = "cucumberProject";
@@ -40,8 +40,8 @@ public class ReportService {
 
 // optionally specify qualifiers for each of the report json files
 		configuration.addPresentationModes(PresentationMode.PARALLEL_TESTING);
-		configuration.setQualifier("cucumber-report-1", "First report");
-		configuration.setQualifier("cucumber-report-2", "Second report");
+//		configuration.setQualifier("cucumber-report-1", "First report");
+//		configuration.setQualifier("cucumber-report-2", "Second report");
 
 		ReportBuilder reportBuilder = new ReportBuilder(jsonFiles, configuration);
 		Reportable result = reportBuilder.generateReports();

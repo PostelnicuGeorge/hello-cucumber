@@ -1,3 +1,4 @@
+@copy @both
 Feature: Is it a special day yet?
   Everybody wants to know when it's my birthday
 
