@@ -1,9 +1,9 @@
-package ro.agile_testing.hello_cucumber.step_defs;
+package hello_cucumber.step_defs;
 
+import hello_cucumber.services.IsItFriday;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import ro.agile_testing.hello_cucumber.services.IsItFriday;
 
 import static org.testng.Assert.assertEquals;
 

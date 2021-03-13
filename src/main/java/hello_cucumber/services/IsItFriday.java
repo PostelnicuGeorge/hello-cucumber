@@ -1,4 +1,4 @@
-package ro.agile_testing.hello_cucumber.services;
+package hello_cucumber.services;
 
 public class IsItFriday {
 	public static String isItFriday(String today) {

@@ -1,4 +1,4 @@
-package ro.agile_testing.hello_cucumber.hooks;
+package hello_cucumber.hooks;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
